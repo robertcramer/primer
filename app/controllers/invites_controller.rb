@@ -1,9 +1,9 @@
 class InvitesController < ApplicationController
   def create
-    mandrill = MANDRILL_API
+    mandrill = MANDRILL_API_KEY
 
     message = {
-        text: "testing 123",
+        text: "testing 123. Testing 123.",
         subject: "this is a test!",
         from_email: "andrewkfaircloth@gmail.com",
         to: [{email: "robertbcramer@icloud.com"}]
