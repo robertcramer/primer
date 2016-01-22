@@ -1,6 +1,6 @@
 class InvitesController < ApplicationController
   def create
-    mandrill = Mandrill::API.new 'MANDRILL_API_KEY'
+    mandrill = Mandrill::API.new ENV["MANDRILL_API_KEY"]
 
     message = {
         text: "testing 123. Testing 123.",
