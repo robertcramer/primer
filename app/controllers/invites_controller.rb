@@ -3,8 +3,8 @@ class InvitesController < ApplicationController
     mandrill = MANDRILL_API
 
     message = {
-        text: params[:text],
-        subject: params[:subject],
+        text: "testing 123",
+        subject: "this is a test!",
         from_email: "andrewkfaircloth@gmail.com",
         to: [{email: "robertbcramer@icloud.com"}]
     }
