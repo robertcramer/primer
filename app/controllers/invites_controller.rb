@@ -1,6 +1,6 @@
 class InvitesController < ApplicationController
   def create
-    mandrill = Mandrill:API.new(MANDRILL_API)
+    mandrill = Mandrill:API
 
     message = {
         text: params[:text],
