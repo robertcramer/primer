@@ -4,14 +4,21 @@ class InvitesController < ApplicationController
 
     name = params[:name]
     email = params[:email]
+    email_string = params[:list]
+    email_array = email_string.split(',')
+
+    email_array.each do |send|
 
     message = {
         text: params[:text],
         subject: "#{name} invites you to subscribe!",
         from_email: email,
-        to: [{email: "robertbcramer@icloud.com"}]
+        to: [{email: send}]
     }
 
+
     mandrill.messages.send message
+    end
+
   end
 end
