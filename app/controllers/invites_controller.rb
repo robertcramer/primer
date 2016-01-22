@@ -3,11 +3,12 @@ class InvitesController < ApplicationController
     mandrill = Mandrill::API.new ENV["MANDRILL_API_KEY"]
 
     name = params[:name]
+    email = params[:email]
 
     message = {
         text: params[:text],
         subject: "#{name} invites you to subscribe!",
-        from_email: "andrewkfaircloth@gmail.com",
+        from_email: email,
         to: [{email: "robertbcramer@icloud.com"}]
     }
 
