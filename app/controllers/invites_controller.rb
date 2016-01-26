@@ -19,6 +19,7 @@ class InvitesController < ApplicationController
 
     mandrill.messages.send message
     end
+    render json: { message: "Thanks for sharing!" }, status: :ok
 
   end
 end
