@@ -7,9 +7,11 @@ class InvitesController < ApplicationController
     email_string = params[:list]
     email_array = email_string.split(',')
 
-    invites_template = to_invites(binding)
+
 
     email_array.each do |send|
+
+      invites_template = to_invites(binding)
 
     message = {
         html: invites_template,
