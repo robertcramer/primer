@@ -4,8 +4,7 @@ class InvitesController < ApplicationController
 
     name = params[:name]
     email = params[:email]
-    email_string = params[:list]
-    email_array = email_string.split(',')
+    email_array = params[:list]
     @link = params[:link]
 
 
