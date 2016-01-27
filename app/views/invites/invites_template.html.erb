@@ -20,6 +20,12 @@
           <p style="display: none;" src="#"></p>
             <% end %>
 
+            <% if @image.present? %>
+            <img src="<%= @image %>" style="max-width:600px; display:block; margin:10px auto; padding: 5px;">
+            <% else %>
+            <img src="#" style="display: none;">
+            <% end %>
+
             <p>
               You can <a href="<%= @link %>">click here</a> to sign up, and you'll have to let me know what you think.
           </p>

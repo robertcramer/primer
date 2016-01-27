@@ -9,6 +9,7 @@ class InvitesController < ApplicationController
     @text = params[:text]
     @greeting = params[:greeting]
     @text2 = params[:text2]
+    @image = params[:image]
 
 
 
