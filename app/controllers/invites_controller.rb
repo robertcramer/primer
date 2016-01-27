@@ -6,6 +6,7 @@ class InvitesController < ApplicationController
     email = params[:email]
     email_array = params[:list]
     @link = params[:link]
+    @text = params[:text]
 
 
 
