@@ -3,16 +3,21 @@
 <body>
 <div class="container" style="width:100%;">
   <div class="email" style="max-width: 600px; background-color: white; display: block; margin: 10px auto;">
+    <img src="http://www.primersports.com/wp-content/uploads/2015/08/Primer_WebBanner_20150723-72.png" style="max-width: 600px;">
     <div class="invite" style="width:100%; max-width: 600px; display: block; margin: 10px auto;">
 
             <% if @greeting.present? %>
           <p><%= @greeting %></p>
+            <% else %>
+          <p style="display: none;" src="#"></p>
           <% end %>
 
           <p><%= @text %></p>
 
             <% if @text2.present? %>
             <p><%= @text2 %></p>
+          <% else %>
+          <p style="display: none;" src="#"></p>
             <% end %>
 
             <p>
