@@ -11,6 +11,10 @@
 
           <p><%= @text %></p>
 
+            <% if @text2.present? %>
+            <p><%= @text2 %></p>
+            <% end %>
+
             <p>
               You can <a href="<%= @link %>">click here</a> to sign up, and you'll have to let me know what you think.
           </p>

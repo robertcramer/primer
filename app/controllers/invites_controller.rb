@@ -8,6 +8,7 @@ class InvitesController < ApplicationController
     @link = params[:link]
     @text = params[:text]
     @greeting = params[:greeting]
+    @text2 = params[:text2]
 
 
 
