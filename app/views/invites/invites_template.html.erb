@@ -4,6 +4,11 @@
 <div class="container" style="width:100%;">
   <div class="email" style="max-width: 600px; background-color: white; display: block; margin: 10px auto;">
     <div class="invite" style="width:100%; max-width: 600px; display: block; margin: 10px auto;">
+
+            <% if @greeting.present? %>
+          <p><%= @greeting %></p>
+          <% end %>
+
           <p><%= @text %></p>
 
             <p>
